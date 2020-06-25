@@ -1,0 +1,17 @@
+version: '3'
+services:
+  kibana:
+    image: kibana:7.6.1
+    environment:
+      SERVER_NAME: kibana
+    ports:
+      - 5601:5601
+  elasticsearch:
+    image: elasticsearch:7.6.1
+    environment:
+      - node.name=elasticsearch
+      - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+      - 9100:9100
