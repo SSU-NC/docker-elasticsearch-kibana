@@ -9,9 +9,15 @@ services:
   elasticsearch:
     image: elasticsearch:7.6.1
     environment:
+      - cluster.name=pdk
       - node.name=elasticsearch
       - "ES_JAVA_OPTS=-Xms4g -Xmx4g"
       - discovery.type=single-node
+      - http.cors.enabled: true
+      - http.cors.allow-origin: "*"
     ports:
       - 9200:9200
+  head:
+    image: mobz/elasticsearch-head
+    ports:
       - 9100:9100
