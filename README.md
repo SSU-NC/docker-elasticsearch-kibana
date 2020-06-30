@@ -21,5 +21,5 @@ $ docker-compose down
 ## Port Forwarding
 |Host|Container|Service|
 |:---:|:---:|:---:|
-|9200|9200|elasticsaerch|
+|9200|9200|elasticsearch|
 |5601|5601|kibana|
