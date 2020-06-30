@@ -23,4 +23,3 @@ $ docker-compose down
 |:---:|:---:|:---:|
 |9200|9200|elasticsaerch|
 |5601|5601|kibana|
-|9100|9100|elasticsearch-head|
