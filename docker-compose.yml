@@ -13,5 +13,11 @@ services:
       - node.name=pdk-es
       - "ES_JAVA_OPTS=-Xms8g -Xmx8g"
       - discovery.type=single-node
+    volumes:
+      - type: volume
+        source: esdata
+        target: /usr/share/elasticsearch/data
     ports:
       - 9200:9200
+volumes:
+  esdata:
