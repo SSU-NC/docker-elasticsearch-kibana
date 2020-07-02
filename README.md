@@ -10,12 +10,12 @@ Kibana: 7.6.1
 ## Run
 * Start container
 ```sh
-$ docker-compose up
+$ sudo docker-compose up
 ```
   
 * Stop container
 ```sh
-$ docker-compose down
+$ sudo docker-compose down
 ```
 
 ## Port Forwarding
