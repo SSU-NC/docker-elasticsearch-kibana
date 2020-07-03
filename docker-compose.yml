@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 services:
   kibana:
     image: kibana:7.6.1
