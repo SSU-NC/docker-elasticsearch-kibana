@@ -10,7 +10,7 @@ services:
     image: elasticsearch:7.6.1
     environment:
       - cluster.name=pdk
-      - node.name=pdk-es
+      - node.name=es
       - "ES_JAVA_OPTS=-Xms8g -Xmx8g"
       - discovery.type=single-node
     volumes:
