@@ -14,10 +14,6 @@ services:
       - "ES_JAVA_OPTS=-Xms8g -Xmx8g"
       - discovery.type=single-node
     volumes:
-      - type: volume
-        source: esdata
-        target: /usr/share/elasticsearch/data
+      - ./elasticsearch/data:/elasticsearch/data
     ports:
       - 9200:9200
-volumes:
-  esdata:
