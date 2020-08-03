@@ -2,7 +2,6 @@
 
 ## Version
 ```
-Docker: 19.03.5
 ElasticSearch: 7.6.1
 Kibana: 7.6.1
 ```
