@@ -8,6 +8,7 @@ services:
       - node.name=es01
       - cluster.name=es-docker-cluster
       - discovery.seed_hosts={es02_HOST_IP},{es03_HOST_IP}
+      - cluster.initial_master_nodes=es01
       - node.master=true
       - node.data=true
       - bootstrap.memory_lock=true
