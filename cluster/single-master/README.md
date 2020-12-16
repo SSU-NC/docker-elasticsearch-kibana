@@ -8,11 +8,11 @@ Kibana: 7.6.1
 
 ## Run
 ### Example
-|host name|node.name|host ip|
-|:-:|:-:|:-:|
-|pdk1|es01|10.1.110.1|
-|pdk2|es02|10.1.110.2|
-|pdk3|es03|10.1.110.3|
+|host name|node.name|host ip|master|data|
+|:-:|:-:|:-:|:-:|:-:|
+|pdk1|es01|10.1.110.1|true|true|
+|pdk2|es02|10.1.110.2|false|true|
+|pdk3|es03|10.1.110.3|false|true|
 
 please modify the network.publish_host, discovery.seed_hosts in docker-compose.yml to match your host IP
 
